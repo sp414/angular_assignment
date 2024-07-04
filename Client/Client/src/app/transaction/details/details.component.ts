@@ -48,10 +48,12 @@ export class DetailsComponent implements OnInit {
       Response => {
         console.log("Updated: "+this.details);
       },
-      error => {
+      function (error) {
         console.log(error);
       }
     );
   }
+
+  
 
 }
