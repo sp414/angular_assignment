@@ -1,0 +1,46 @@
+<div>
+    <form [formGroup]="detailsForm" (ngSubmit)="submitComment()">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Field Name</th>
+                <th>Requirements</th>
+              </tr>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td>
+                        <label>ID</label>
+                    </td>
+                    <td>
+                        <input type="text" id="id" formControlName="id" readonly class="form-control"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Date</label>
+                    </td>
+                    <td>
+                        <input type="text" id="date" formControlName="date" readonly class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Comments</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Comments" formControlName="Comments" class="form-control"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

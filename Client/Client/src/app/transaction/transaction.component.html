@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>
+      User Transcations
+    </h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Comments</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of data">
+          <td>{{ d.id }}</td>
+          <td>{{ d.date }}</td>
+          <td>{{ d.Comments }}</td>
+          <td>
+            <button (click)="navigateToChaild(d.id)">
+                View
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div> 
+
+
